@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #2b0000, #000000);
+      color: #fff;
+      min-height: 100vh;
+      background-attachment: fixed;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    .about-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #f1c40f;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 10px auto;
+      line-height: 1.6;
+      color: #f2f2f2;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 36px;
+      color: #f1c40f;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: rgba(255, 0, 0, 0.05);
+    }
+
+    .column {
+      flex: 0 0 300px;
+      margin: 15px;
+    }
+
+    .card {
+      background-color: #1c0000;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .container h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .title {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .container p {
+      margin: 5px 0;
+      color: #ccc;
+    }
+
+    .button,
+    .linkedin-button,
+    .github-button {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-right: 5px;
+    }
+
+    .button:hover {
+      background-color: #c0392b;
+    }
+
+    .linkedin-button {
+      background-color: #0077b5;
+    }
+
+    .linkedin-button:hover {
+      background-color: #005885;
+    }
+
+    .github-button {
+      background-color: #333;
+    }
+
+    .github-button:hover {
+      background-color: #000;
+    }
+
+    @media screen and (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>Welcome to our group! We are a community of passionate individuals who share a common interest in making new
+      developments and have the same mindset for becoming top gamers.</p>
+    <p>Our group was founded with the goal of connecting like-minded people and fostering a supportive environment
+      where we can learn, grow, and have fun together.</p>
+  </div>
+
+  <h2>Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <!-- Optional image -->
+        <!-- <img src="your-image.jpg" alt="Atay Ashraf Khan"> -->
+        <div class="container">
+          <h2>Atay Ashraf Khan</h2>
+          <p class="title">Creator</p>
+          <a href="/" class="button">Contact</a>
+          <a href="https://www.linkedin.com/in/your-profile" class="linkedin-button" target="_blank">LinkedIn</a>
+          <a href="https://github.com/atayashraf" class="github-button" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
